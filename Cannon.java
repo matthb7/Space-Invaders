@@ -38,7 +38,7 @@ public class Cannon extends JPanel {
         x -= 25;
     }
 
- // ----------------------------------------------------------
+    // ----------------------------------------------------------
     /**
      * Move Cannon 25 pixels right across GUI Panel
      */
