@@ -20,23 +20,21 @@ public class Panel extends JPanel implements KeyListener {
     private Timer t;
     private BufferedImage myImage;
     private Graphics myBuffer;
+
+    private JButton start;
+    private JLabel labelLevel;
+    private JLabel labelScore;
+    private JLabel labelEnd;
+
     private ArrayList<Invader> list;
+    private ArrayList<CannonBall> balls = new ArrayList<CannonBall>();
     private Cannon can;
     private CannonBall ball;
 
-    public int timerCount = 150;
-    public int invaderCount = 150;
-    public int levelCount = 1;
-    public int scoreCount = 0;
-
-    public ArrayList<CannonBall> balls = new ArrayList<CannonBall>();
-    public ImageIcon spaceImg = new ImageIcon(
-        getClass().getResource("NewSpace2.jpg"));
-
-    public JButton start;
-    public JLabel labelLevel;
-    public JLabel labelScore;
-    public JLabel labelEnd;
+    private int timerCount = 150;
+    private int invaderCount = 150;
+    private int levelCount = 1;
+    private int scoreCount = 0;
 
     // ----------------------------------------------------------
     /**

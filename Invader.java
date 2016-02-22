@@ -12,12 +12,11 @@ import java.util.ArrayList;
  *  @version Feb 21, 2016
  */
 public class Invader extends JPanel {
+    private int x, y, diameter;
+    private int oneX, oneY;
+    private boolean isAlive;
     private Color myColor;
-
-    public int x, y, diameter;
-    public int oneX, oneY;
-    public boolean isAlive;
-    public ImageIcon invader = new ImageIcon(
+    private ImageIcon invader = new ImageIcon(
         getClass().getResource("space-invaders.jpg"));
 
     // ----------------------------------------------------------
@@ -43,10 +42,6 @@ public class Invader extends JPanel {
 
     public int getY() {
         return y;
-    }
-
-    public int getDiameter() {
-        return diameter;
     }
 
     // ----------------------------------------------------------

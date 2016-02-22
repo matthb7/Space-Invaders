@@ -11,11 +11,9 @@ import java.awt.*;
  *  @version Feb 21, 2016
  */
 public class CannonBall extends JPanel {
+    private int x, y, diameter;
+    private boolean isAlive;
     private Color myColor;
-
-    public int x, y, diameter;
-    public int oneX, oneY;
-    public boolean isAlive;
 
     // ----------------------------------------------------------
     /**
@@ -27,8 +25,6 @@ public class CannonBall extends JPanel {
         x = xPos;
         y = 350;
         diameter = myDiameter;
-        oneX = xPos;
-        oneY = 350;
         isAlive = true;
         myColor = Color.WHITE;
     }

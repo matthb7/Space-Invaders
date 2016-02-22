@@ -11,10 +11,9 @@ import java.awt.*;
  *  @version Feb 21, 2016
  */
 public class Cannon extends JPanel {
+    private int x, y;
     private Color myColor;
-
-    public int x, y;
-    public ImageIcon cannon = new ImageIcon(getClass().getResource("cannon.jpg"));
+    private ImageIcon cannon = new ImageIcon(getClass().getResource("cannon.jpg"));
 
     // ----------------------------------------------------------
     /**
